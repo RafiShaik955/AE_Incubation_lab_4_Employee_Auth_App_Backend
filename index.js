@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');  
+const dotenv = require('dotenv');
+const jwt = require('jsonwebtoken');
 
 const app = express();
-
+dotenv.config();
 app.use(cors())
 // create express app
 
